@@ -42,6 +42,15 @@ sudo dnf install 'dnf-command(config-manager)'
 sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 sudo dnf install gh --repo gh-cli
 ```
+#### For dnf5 (Fedora 41)
+
+Install from our package repository for immediate access to latest releases:
+
+```bash
+sudo dnf install 'dnf-command(config-manager)'
+sudo dnf config-manager addrepo --from-repofile https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh --repo gh-cli
+```
 
 <details>
 <summary>Show dnf5 commands</summary>
