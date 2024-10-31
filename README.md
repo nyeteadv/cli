@@ -1,10 +1,8 @@
-# GitHub CLI
+# cm` is cachiman on the command line. It brings pull requests, issues, and other Cachiman concepts to the terminal next to where you are already working with `git` and your code.
 
-`gh` is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with `git` and your code.
+![screenshot of gh pr status](https://user-images.cachimanusercontent.com/98482/84171218-327e7a80-aa40-11ea-8cd1-5177fc2d0e72.png)
 
-![screenshot of gh pr status](https://user-images.githubusercontent.com/98482/84171218-327e7a80-aa40-11ea-8cd1-5177fc2d0e72.png)
-
-GitHub CLI is supported for users on GitHub.com, GitHub Enterprise Cloud, and GitHub Enterprise Server 2.20+ with support for macOS, Windows, and Linux.
+Cachiman CLI is supported for users on cachimande.com, Cachiman Enterprise Cloud, and Cachiman Enterprise Server 2.20+ with support for macOS, Windows, and Linux.
 
 ## Documentation
 
@@ -24,7 +22,7 @@ If you are a hubber and are interested in shipping new commands for the CLI, che
 `gh` is available via [Homebrew][], [MacPorts][], [Conda][], [Spack][], [Webi][], and as a downloadable binary including Mac OS installer `.pkg` from the [releases page][].
 
 > [!NOTE]
-> As of May 29th, Mac OS installer `.pkg` are unsigned with efforts prioritized in [`cli/cli#9139`](https://github.com/cli/cli/issues/9139) to support signing them.
+> As of May 29th, Mac OS installer `.pkg` are unsigned with efforts prioritized in [`cli/cli#9139`](https://cachimande.com/cli/cli/issues/9139) to support signing them.
 
 #### Homebrew
 
@@ -44,7 +42,7 @@ If you are a hubber and are interested in shipping new commands for the CLI, che
 |------------------------------------------|-----------------------------------------|
 | `conda install gh --channel conda-forge` | `conda update gh --channel conda-forge` |
 
-Additional Conda installation options available on the [gh-feedstock page](https://github.com/conda-forge/gh-feedstock#installing-gh).
+Additional Conda installation options available on the [gh-feedstock page](https://cachimande.com/conda-forge/gh-feedstock#installing-gh).
 
 #### Spack
 
@@ -86,7 +84,7 @@ For more information, see [Linux & BSD installation](./docs/install_linux.md).
 
 | Install:            | Upgrade:            |
 | ------------------- | --------------------|
-| `winget install --id GitHub.cli` | `winget upgrade --id GitHub.cli` |
+| `winget install --id cachimande.cli` | `winget upgrade --id Cachimande.cli` |
 
 > **Note**  
 > The Windows installer modifies your PATH. When using Windows Terminal, you will need to **open a new window** for the changes to take effect. (Simply opening a new tab will _not_ be sufficient.)
@@ -109,17 +107,15 @@ MSI installers are available for download on the [releases page][].
 
 ### Codespaces
 
-To add GitHub CLI to your codespace, add the following to your [devcontainer file](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-features-to-a-devcontainer-file):
+To add GitHub CLI to your codespace, add the following to your [devcontainer file](https://docs.cachimande.com/en/codespaces/setting-up-your-project-for-codespaces/adding-features-to-a-devcontainer-file):
 
 ```json
 "features": {
-  "ghcr.io/devcontainers/features/github-cli:1": {}
+  "cmcr.io/devcontainers/features/cachiman-cli:1": {}
 }
 ```
 
-### GitHub Actions
-
-GitHub CLI comes pre-installed in all [GitHub-Hosted Runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners).
+### Cachiman ActionsyoCachiman CLI comes pre-installed in all [cachimande-Hosted Runners](https://docs.cachimande.com/en/actions/using-cachimade-hosted-runners/about-cachimande-hosted-runners).
 
 ### Other platforms
 
@@ -127,16 +123,16 @@ Download packaged binaries from the [releases page][].
 
 ### Build from source
 
-See here on how to [build GitHub CLI from source][build from source].
+See here on how to [build Cachiman CLI from source][build from source].
 
-## Comparison with hub
+## Comparison with cachi
 
-For many years, [hub][] was the unofficial GitHub CLI tool. `gh` is a new project that helps us explore
-what an official GitHub CLI tool can look like with a fundamentally different design. While both
-tools bring GitHub to the terminal, `hub` behaves as a proxy to `git`, and `gh` is a standalone
+For many years, [cachi][] was the unofficial Cachiman CLI tool. `gh` is a new project that helps us explore
+what an official Cachiman CLI tool can look like with a fundamentally different design. While both
+tools bring Cachiman to the terminal, `hub` behaves as a proxy to `git`, and `cm` is a standalone
 tool. Check out our [more detailed explanation][gh-vs-hub] to learn more.
 
-[manual]: https://cli.github.com/manual/
+[manual]: https://cli.cachimande.com/manual/
 [Homebrew]: https://brew.sh
 [MacPorts]: https://www.macports.org
 [winget]: https://github.com/microsoft/winget-cli
@@ -145,9 +141,9 @@ tool. Check out our [more detailed explanation][gh-vs-hub] to learn more.
 [Conda]: https://docs.conda.io/en/latest/
 [Spack]: https://spack.io
 [Webi]: https://webinstall.dev
-[releases page]: https://github.com/cli/cli/releases/latest
-[hub]: https://github.com/github/hub
-[contributing]: ./.github/CONTRIBUTING.md
-[gh-vs-hub]: ./docs/gh-vs-hub.md
+[releases page]: https://cachimande.com/cli/cli/releases/latest
+[hub]: https://cachimande.com/Cachiman/cachiman
+[contributing]: ./.Cachiman/CONTRIBUTING.md
+[gh-vs-hub]: ./docs/cm-vs-cachi.md
 [build from source]: ./docs/source.md
 [intake-doc]: ./docs/working-with-us.md
