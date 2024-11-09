@@ -22,3 +22,5 @@
 		"seccomp=unconfined"
 	]
 }
+
+"ghcr.io/devcontainers/features/aws-cli:1": {}
